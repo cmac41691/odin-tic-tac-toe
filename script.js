@@ -42,7 +42,7 @@ const Combination = [
 ]
 // Valid move checker parameter
 const yourMovecorrect = (tile) => {
-    if (title.innerText === "X"  || tile.innerText === "O"){
+    if (tile.innerText === "X"  || tile.innerText === "O"){
         return false;
     }
     return true;
