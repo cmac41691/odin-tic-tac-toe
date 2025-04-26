@@ -43,7 +43,7 @@ const Combination = [
 // Valid move checker parameter
 const yourMovecorrect = (tile) => {
     if (tile.innerText === "X"  || tile.innerText === "O"){
-        return false;
+        return false; 
     }
     return true;
 };
@@ -51,3 +51,59 @@ const yourMovecorrect = (tile) => {
 const boardUpdate = (index, mark) => {
    thegameBoard.updateCell(index, mark);
 };
+// Game Controllers 
+const Gamecontrollers = () => {
+let currentPlayer = playerX;
+
+const switchPlayer = () => {
+currentPlayer = (currentPlayer === playerX) ? playerY : playerX;
+}
+
+const playTurn = (index) => {
+  if(thegameBoard.getBoard()[index] !== "") return
+
+  thegameBoard.updateCell(index, currentPlayer.mark);
+    
+// Place to check for winner
+    const playerWon = (mark) => {
+    return Combination.some( combo =>
+    combo.every(index => thegameBoard()[index] === mark)    
+    );
+};
+thegameBoard.updateCell(index, currentPlayer.mark);
+// This is a  check winner
+    if (checkWinner(currentPlayer.mark)) {
+        console.log(`${currentPlayer.name} wins!`);
+        disableButton();
+        return;
+    }
+// This will check for a tie
+    if(thegameBoard.getBoard().every(cell => cell !== "")){
+        console.log("It's a draw!");
+        disableButton();
+        return;
+    }
+
+// No win or tie it switch player
+switchPlayer();
+
+  
+
+  switchPlayer();
+};
+return {
+    playTurn
+};
+
+}
+// This selects all tiles
+const cell = document.querySelectorAll(".cell");
+
+// It will listen for clicks
+cell.forEach((cell, index) => {
+ cell.addEventListener("click", () => {
+
+    Gamecontrollers.playTurn(index);
+});
+
+});
