@@ -46,5 +46,5 @@ A simple, browser-based Tic Tac Toe game built using **HTML**, **CSS**, and **Ja
 
 ---
 
-🔗 [View on GitHub Pages](#) <!-- Optional: add a GitHub Pages deployment link if you set one up -->
+🔗 [https://cmac41691.github.io/odin-tic-tac-toe/]
 
