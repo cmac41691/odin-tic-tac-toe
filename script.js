@@ -15,7 +15,7 @@ const thegameBoard = (() => {
   return {
     board,
     getBoard,
-    updateCell,
+    updateCell, 
     reset,
   };
 })();

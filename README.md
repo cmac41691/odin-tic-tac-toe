@@ -28,7 +28,7 @@ A simple, browser-based Tic Tac Toe game built using **HTML**, **CSS**, and **Ja
 1. Open the `index.html` file in a browser or use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VSCode.
 2. Players take turns clicking tiles to place their marks.
 3. The game ends when one player wins or when there is a draw.
-4. Click the **Reset Game** button to play again.
+4. Click the **Reset Game** button to play again. 
 
 ## 📌 To Do / Future Enhancements
 
