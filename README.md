@@ -2,7 +2,7 @@
 
 A simple, browser-based Tic Tac Toe game built using **HTML**, **CSS**, and **JavaScript** as part of [The Odin Project](https://www.theodinproject.com/) curriculum.
 
-## 📸 Screenshot
+## 📸 Screenshot 
 
 ![Tic Tac Toe Screenshot](./screenshot.png)
 
